@@ -1,3 +1,4 @@
 .label {
   width: 100px;
+  text-transform: capitalize;
 }
