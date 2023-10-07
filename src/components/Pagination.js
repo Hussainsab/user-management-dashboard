@@ -26,13 +26,15 @@ const Pagination = () => {
 
   return (
     <div className={styles.pagination}>
-      <Prev content={"Prev"} value={-1} disable={currentPage == 1} />
+      <Prev content={"Prev"} value={-1} disable={currentPage === 1} />
       {pages.map((ele, index) => {
         return (
           <button
             onClick={() => handleClick(ele)}
             className={
-              styles.button + " " + `${currentPage == ele ? styles.active : ""}`
+              styles.button +
+              " " +
+              `${currentPage === ele ? styles.active : ""}`
             }
             key={`numbers${index}`}
           >
@@ -40,7 +42,7 @@ const Pagination = () => {
           </button>
         );
       })}
-      <Next content={"Next"} value={1} disable={currentPage == totalPages} />
+      <Next content={"Next"} value={1} disable={currentPage === totalPages} />
     </div>
   );
 };

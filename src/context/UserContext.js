@@ -21,7 +21,7 @@ function UserContextProvider({ children }) {
     dispatch,
   ] = useReducer(userReducer(), initialState);
 
-  //Fetching the data from API 
+  //Fetching the data from API
   const fetchUsersFromApi = async () => {
     //Error handleing
     try {
@@ -54,10 +54,9 @@ function UserContextProvider({ children }) {
     dispatch(getSuccessOrFailData(true, message, success));
   }
 
-
   //delete user function will help to delete the user from the list.
   // making the pit call to the server with DELETE methode so the data can be deleted from the backed
-  
+
   async function deleteUser(userId) {
     try {
       let response = await fetch(`${URL}/${userId}`, {
@@ -128,15 +127,14 @@ function UserContextProvider({ children }) {
         getSuccessOrFailData(true, "SuccessFully Updated User Details", true)
       );
     } catch (err) {
-
       dispatch(
         getSuccessOrFailData(true, "Failed to Update User Details....", false)
       );
     }
   }
 
-  // this is a single function wich will be passed to the different componet and will perfom the operation 
-  // depending on the user id 
+  // this is a single function wich will be passed to the different componet and will perfom the operation
+  // depending on the user id
   // if there is a userid preset then the request is for Updating the data
   // if no user id thne it's a new request to add new user.
   async function addOrUpdateUser(user) {
@@ -147,7 +145,6 @@ function UserContextProvider({ children }) {
     }
     dispatch({ type: USERS_EDIT, payload: null });
   }
-
 
   // initial render data fetching the data will be done from here.
   useEffect(() => {
@@ -166,15 +163,14 @@ function UserContextProvider({ children }) {
     }
 
     return () => clearTimeout(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [message?.isTrue]);
-
 
   //   // storing the data on localStorage to make it refresh persistance
   //   useEffect(()=>{
   //     localStorage.setItem('user',)
   //   },[userData, totalUsers, totalPages, currentPage,])
 
-  
   return (
     <UserContext.Provider
       value={{

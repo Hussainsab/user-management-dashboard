@@ -79,7 +79,7 @@ const userReducer = () => {
         };
       case USER_UPDATE:
         let updated = state.userData.map((user) => {
-          if (user.id == action.payload.id) {
+          if (user.id === action.payload.id) {
             return action.payload;
           }
           return user;
