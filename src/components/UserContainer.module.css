@@ -1,0 +1,47 @@
+.userContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid black;
+  min-height: 50px;
+  background-color: rgba(255, 235, 205, 0.212);
+}
+
+.actions > button {
+  padding: 10px;
+  margin: 2px;
+  border: none;
+}
+
+.actions > button:hover {
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 255, 0.582);
+}
+
+.editButton {
+  margin-right: 5px;
+  background-color: rgba(78, 187, 230, 0.795);
+}
+
+.deleteButton {
+  background-color: rgba(240, 40, 40, 0.938);
+}
+
+@media (max-width: 727px) {
+  .userContainer {
+    display: block;
+  }
+  .actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 5px 10px;
+  }
+
+  .actions > button {
+    padding: 5px 10px;
+    border: none;
+  }
+}

@@ -1,0 +1,55 @@
+.userContainer {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.userContainer > p {
+  overflow: hidden;
+}
+
+.userName {
+  text-overflow: ellipsis;
+  white-space: wrap;
+}
+.userLastName {
+  text-overflow: ellipsis;
+  white-space: wrap;
+}
+.userDepartment {
+  text-overflow: ellipsis;
+  white-space: wrap;
+}
+.userEmail {
+  text-overflow: ellipsis;
+  white-space: wrap;
+}
+
+@media (max-width: 664px) {
+  .userContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .userContainer > p {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .userContainer {
+    display: block;
+  }
+  .userContainer > p {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 727px) {
+  .userContainer {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

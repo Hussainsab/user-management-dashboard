@@ -1,0 +1,27 @@
+.message {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 10px;
+  z-index: 100;
+  overflow: hidden;
+  height: 0;
+  width: 0;
+}
+
+.active {
+  width: fit-content;
+  height: fit-content;
+  padding: 10px 30px;
+  background-color: rgb(230, 86, 86);
+  transition: 0.5s ease-in-out;
+}
+
+.success {
+  background-color: rgb(86, 230, 129);
+  width: fit-content;
+  height: fit-content;
+  padding: 10px 30px;
+  transition: 0.5s ease-in-out;
+}

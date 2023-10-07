@@ -1,0 +1,10 @@
+export const USERS_LOADING = "USERS/LOADING";
+export const USERS_FETCH_DATA = "USERS/FETCH_DATA";
+export const USERS_ERROR_AND_SUCCESS = "USERS/ERROR_AND_SUCCESS";
+export const USERS_PER_PAGE = 5;
+export const USERS_CHANGEPAGE = "USERS/CHANGEPAGE";
+export const USERS_EDIT = "USERS/EDIT";
+export const USER_DELETE = "USER/DELETE";
+export const USERS_ADD = "USERS/ADD";
+export const USER_UPDATE = "USERS/UPDATE";
+export const URL = "https://jsonplaceholder.typicode.com/users";

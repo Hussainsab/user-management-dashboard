@@ -1,0 +1,49 @@
+.form {
+  background-color: rgb(178, 238, 238);
+  padding: 20px;
+}
+
+.form input {
+  padding: 10px;
+}
+
+.form > div {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.formContainer {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(243, 241, 93, 0.2);
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.controls > button {
+  padding: 10px 20px;
+  border: none;
+}
+
+.controls > button:hover {
+  box-shadow: 0px 0px 5px 4px rgba(0, 0, 255, 0.582);
+}
+
+.controls > button:nth-child(1) {
+  background-color: rgba(53, 223, 53, 0.849);
+}
+
+.controls > button:nth-child(2) {
+  background-color: rgba(95, 105, 95, 0.849);
+  color: white;
+}

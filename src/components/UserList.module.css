@@ -1,0 +1,38 @@
+.userList {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.userContainer {
+  width: 84%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+  grid-template-rows: 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.userContainer > p {
+  font-weight: bold;
+}
+
+.userContainerHeader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.actions {
+  margin-right: 50px;
+  font-weight: bold;
+}
+
+@media (max-width: 727px) {
+  .userContainerHeader {
+    display: block;
+  }
+}
