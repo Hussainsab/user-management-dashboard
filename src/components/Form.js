@@ -41,7 +41,8 @@ const Form = () => {
   function validateInput(e, type) {
     if (e === "firstName" || e === "lastName" || e === "department") {
       if (type.length < 3 || type.length > 10) {
-        type.length !== 0 && setMessage(`Invalid ${e}`, false);
+        type.length !== 0 &&
+          setMessage(`Invalid ${e} length should be between 3 to 10`, false);
         return false;
       }
     } else if (e === "email") {
