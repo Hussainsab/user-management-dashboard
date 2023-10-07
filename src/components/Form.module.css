@@ -14,7 +14,7 @@
 }
 
 .formContainer {
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   background-color: rgba(243, 241, 93, 0.2);
