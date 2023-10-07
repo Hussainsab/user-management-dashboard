@@ -3,7 +3,7 @@ import styles from "./FormInput.module.css";
 const FormInput = ({ type, name, value, handleInput, validateInput }) => {
   return (
     <div>
-      <label className={styles.label}>FirstName</label>
+      <label className={styles.label}>{name}</label>
       <input
         type={type}
         name={name}
